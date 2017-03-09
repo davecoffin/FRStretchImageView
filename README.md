@@ -30,7 +30,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Getting start
 
-First of all, you will need to create the `UIScrollView` that will be observed in storyboard. For more information about it, check this Natasha The Robot's tutorial: https://www.natashatherobot.com/ios-autolayout-scrollview/
+First of all, you will need to create & set up the `UIScrollView` that will be observed in storyboard. For more information about it, check this Natasha The Robot's tutorial: https://www.natashatherobot.com/ios-autolayout-scrollview/
 
 When you are all set, place your `UIImageView` on top of it and pin the `NSLayoutConstraint`'s you'll need. You don't need to reference them for `FRStretchImageView`, it will do it for you. But in order to make it work properly, there are only 2 conditions:
 
