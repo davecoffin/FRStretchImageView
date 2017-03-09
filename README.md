@@ -1,5 +1,11 @@
 # FRStretchImageView
 
+![language](https://img.shields.io/badge/Language-%20Swift%20-orange.svg)
+![CI Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+[![Version](https://img.shields.io/cocoapods/v/FRStretchImageView.svg?style=flat)](http://cocoapods.org/pods/FRStretchImageView)
+[![License](https://img.shields.io/cocoapods/l/FRStretchImageView.svg?style=flat)](http://cocoapods.org/pods/FRStretchImageView)
+[![Platform](https://img.shields.io/cocoapods/p/FRStretchImageView.svg?style=flat)](http://cocoapods.org/pods/FRStretchImageView)
+
 An easy way to add pull-to-stretch `UIImageView` on top of your `UIScrollView`. This is a similar behavior of Twitter Profile's Header.
 
 ## Installation
