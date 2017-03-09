@@ -38,6 +38,8 @@ When you are all set, place your `UIImageView` on top of it and pin the `NSLayou
 
 2) You need to pin a Height `NSLayoutConstraint` in your `UIImageView`.
 
+... and subclass it as `FRStretchImageView`.
+
 ## Usage
 
 Now you're ready to add the stretching behavior to your `UIImageView`! You just need to write a single line to make it work:
@@ -53,7 +55,7 @@ import FRStretchImageView
 
 class MyViewController : UIViewController {
   @IBOutlet weak var myScroll : UIScrollView!
-  @IBOutlet weak var myStretchingImage : UIImageView!
+  @IBOutlet weak var myStretchingImage : FRStretchImageView!
   override func viewDidLoad() {
     super.viewDidLoad()
     self.myStretchingImage.stretchHeightWhenPulledBy(scrollView: self.myScroll)
