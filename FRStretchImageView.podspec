@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FRStretchImageView"
-  s.version      = "1.0"
-  s.summary      = "An easy way to add pull-to-stretch image on top of your UIScrollView."
+  s.version      = "1.0.1"
+  s.summary      = "An easy way to add pull-to-stretch UIImageView on top of your UIScrollView."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-An easy way to add pull-to-stretch image on top of your UIScrollView. This is a similar effect of Twitter’s Profile Headers.
+An easy way to add pull-to-stretch UIImageView on top of your UIScrollView. This is a similar effect of Twitter’s Profile Headers.
                    DESC
 
   s.homepage     = "https://github.com/felipericieri/FRStretchImageView.git"
