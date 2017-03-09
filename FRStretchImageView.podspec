@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-This is a similar effect of Twitter’s Profile Headers.
+An easy way to add pull-to-stretch image on top of your UIScrollView. This is a similar effect of Twitter’s Profile Headers.
                    DESC
 
-  s.homepage     = "https://github.com/felipericieri/FRStretchImageView"
+  s.homepage     = "https://github.com/felipericieri/FRStretchImageView.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ This is a similar effect of Twitter’s Profile Headers.
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/felipericieri/FRStretchImageView", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/felipericieri/FRStretchImageView.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
