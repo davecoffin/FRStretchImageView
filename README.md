@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/cocoapods/l/FRStretchImageView.svg?style=flat)](http://cocoapods.org/pods/FRStretchImageView)
 [![Platform](https://img.shields.io/cocoapods/p/FRStretchImageView.svg?style=flat)](http://cocoapods.org/pods/FRStretchImageView)
 
-An easy way to add pull-to-stretch `UIImageView` on top of your `UIScrollView`. This is a similar behavior of Twitter Profile's Header.
+An easy way to add pull-to-stretch `UIImageView`/`UIView` on top of your `UIScrollView`. This is a similar behavior of Twitter Profile's Header.
 
 ## Installation
 
@@ -22,7 +22,7 @@ And then run:
 
 #### Manual Installation
 
-To manually install `FRStretchImageView`, simply add `FRStretchImageView.swift` to your project.
+To manually install `FRStretchImageView`, simply add `FRStretchImageView` .swift files to your project.
 
 ## Example
 
@@ -32,17 +32,17 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 First of all, you will need to create & set up the `UIScrollView` that will be observed in storyboard. For more information about it, check this Natasha The Robot's tutorial: https://www.natashatherobot.com/ios-autolayout-scrollview/
 
-When you are all set, place your `UIImageView` on top of it and pin the `NSLayoutConstraint`'s you'll need. You don't need to reference them for `FRStretchImageView`, it will do it for you. But in order to make it work properly, there are only 2 conditions:
+When you are all set, place your `UIImageView`/`UIView` on top of it and pin the `NSLayoutConstraint`'s you'll need. You don't need to reference them for `FRStretchImageView`, it will do it for you. But in order to make it work properly, there are only 2 conditions:
 
-1) You need to pin a Top `NSLayoutConstraint` from your `UIImageView` (firstItem) to its superview (it may be the "Content View" `UIView` of your `UIScrollView`);
+1) You need to pin a Top `NSLayoutConstraint` from your `UIImageView`/`UIView` (firstItem) to its superview (it may be the "Content View" `UIView` of your `UIScrollView`);
 
-2) You need to pin a Height `NSLayoutConstraint` in your `UIImageView`.
+2) You need to pin a Height `NSLayoutConstraint` in your `UIImageView`/`UIView`.
 
 ... and subclass it as `FRStretchImageView`.
 
 ## Usage
 
-Now you're ready to add the stretching behavior to your `UIImageView`! You just need to write a single line to make it work:
+Now you're ready to add the stretching behavior to your `UIImageView`/`UIView`! You just need to write a single line to make it work:
 
 ```swift
 myStretchingImage.stretchHeightWhenPulledBy(scrollView: myScroll)
@@ -65,7 +65,7 @@ class MyViewController : UIViewController {
 
 ## Troubleshooting
 
-`FRStretchImageView` can work around your `IBOutlet`s to add its behavior automatically, but it will only wrap the `IBOutlet`s themselves & its superviews. So if you are using multiples `UIView`s between the `UIScrollView` and `UIImageView` observed, you should set the `clipToBounds = false` on them.
+`FRStretchImageView` can work around your `IBOutlet`s to add its behavior automatically, but it will only wrap the `IBOutlet`s themselves & its superviews. So if you are using multiples `UIView`s between the `UIScrollView` and `UIImageView`/`UIView` observed, you should set the `clipToBounds = false` on them.
 
 ## License
 
