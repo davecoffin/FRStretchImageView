@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A24E0801E7191BF0098CDB1 /* FRStretchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A24E07F1E7191BF0098CDB1 /* FRStretchView.swift */; };
 		4AD9944C1E70D33D006C9556 /* FRStretchImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD9944A1E70D33D006C9556 /* FRStretchImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AD994531E70D357006C9556 /* FRStretchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD994521E70D357006C9556 /* FRStretchImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A24E07F1E7191BF0098CDB1 /* FRStretchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRStretchView.swift; sourceTree = "<group>"; };
 		4AD994471E70D33D006C9556 /* FRStretchImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FRStretchImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD9944A1E70D33D006C9556 /* FRStretchImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRStretchImageView.h; sourceTree = "<group>"; };
 		4AD9944B1E70D33D006C9556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 		4AD994491E70D33D006C9556 /* FRStretchImageView */ = {
 			isa = PBXGroup;
 			children = (
+				4A24E07F1E7191BF0098CDB1 /* FRStretchView.swift */,
 				4AD994521E70D357006C9556 /* FRStretchImageView.swift */,
 				4AD9944A1E70D33D006C9556 /* FRStretchImageView.h */,
 				4AD9944B1E70D33D006C9556 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A24E0801E7191BF0098CDB1 /* FRStretchView.swift in Sources */,
 				4AD994531E70D357006C9556 /* FRStretchImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
