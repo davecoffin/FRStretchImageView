@@ -1,0 +1,6 @@
+framework module FRStretchImageView {
+  umbrella header "FRStretchImageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

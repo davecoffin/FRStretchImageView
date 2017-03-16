@@ -1,8 +1,8 @@
 //
-//  FRStretchImageView.swift
-//  FRStretchImageView
+//  FRStretchView.swift
+//  FRStretchView
 //
-//  Created by Felipe Ricieri on 08/03/17.
+//  Created by Felipe Ricieri on 09/03/17.
 //  Copyright © 2017 Ricieri Labs. All rights reserved.
 //
 
@@ -10,9 +10,10 @@ import Foundation
 import UIKit
 
 /**
- FRStretchImageView: an easy way to add a pull-to-stretch behavior to your UIImageView
+ FRStretchView: an easy way to add a pull-to-stretch behavior to your UIView
+ (Similar to FRStretchImageView)
  */
-public class FRStretchImageView : UIImageView {
+public class FRStretchView : UIView {
     
     /**
      debug: Set it to TRUE if you want to receive logs
@@ -25,13 +26,13 @@ public class FRStretchImageView : UIImageView {
     public var topConstraint: NSLayoutConstraint! {
         didSet {
             // Automatically sets the initial value for Top
-            if  topInitialValue == nil  { topInitialValue = topConstraint.constant }
+            topInitialValue = topConstraint.constant
         }
     }
     public var heightConstraint: NSLayoutConstraint! {
         didSet {
             // Automatically sets the initial value for Height
-            if  heightInitialValue == nil  { heightInitialValue = heightConstraint.constant }
+            heightInitialValue = heightConstraint.constant
         }
     }
     
@@ -67,19 +68,19 @@ public class FRStretchImageView : UIImageView {
         
         // Inform log
         if  debug {
-            print("FRStretchImageView: was allocated")
+            print("FRStretchView: was allocated")
         }
         
         // Set the scrollView
         self.scrollView = scrollView
         
         // ScrollView settings
-        assert(self.scrollView != nil, "FRStretchImageView: scrollView cannot be nil")
+        assert(self.scrollView != nil, "FRStretchView: scrollView cannot be nil")
         self.scrollView.clipsToBounds = false
         self.scrollView.addObserver(self, forKeyPath: self.keyPathObserved, options: [.new], context: &self.context)
         
         // ImageView settings
-        assert(self.superview != nil, "FRStretchImageView: imageView has no superview")
+        assert(self.superview != nil, "FRStretchView: imageView has no superview")
         self.contentMode = .scaleAspectFill
         self.clipsToBounds = true
         
@@ -100,7 +101,7 @@ public class FRStretchImageView : UIImageView {
         let selfConstraints = self.constraints
         for constraint in selfConstraints {
             if  constraint.firstAttribute == .height
-            &&  constraint.relation == .equal {
+                &&  constraint.relation == .equal {
                 self.heightConstraint = constraint
             }
         }
@@ -110,7 +111,7 @@ public class FRStretchImageView : UIImageView {
         
         // Print log
         if  debug {
-            print("FRStretchImageView: was deallocated")
+            print("FRStretchView: was deallocated")
         }
         
         // Remove observer
@@ -124,20 +125,20 @@ public class FRStretchImageView : UIImageView {
 }
 
 // MARK: - KVO
-extension FRStretchImageView {
+extension FRStretchView {
     
     override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         // We make sure everything was set
-        assert(self.topConstraint != nil, "FRStretchImageView: imageView must have a top constraint pinned to top of superview. Use Interface Builder to pin it.")
-        assert(self.heightConstraint != nil, "FRStretchImageView: imageView must have a height constraint pinned on it. Use Interface Builder to pin it.")
+        assert(self.topConstraint != nil, "FRStretchView: imageView must have a top constraint pinned to top of superview. Use Interface Builder to pin it.")
+        assert(self.heightConstraint != nil, "FRStretchView: imageView must have a height constraint pinned on it. Use Interface Builder to pin it.")
         
         if  let changeDict = change {
             
             // This is our scope
             if  object as? NSObject == self.scrollView
-            &&  keyPath == self.keyPathObserved
-            &&  context == &self.context {
+                &&  keyPath == self.keyPathObserved
+                &&  context == &self.context {
                 
                 // We will only proceed in case we have the correct new value as CGPoint
                 if  let new = changeDict[.newKey],
@@ -145,7 +146,7 @@ extension FRStretchImageView {
                     
                     // Print log
                     if  debug {
-                        print("FRStretchImageView: New Content Offset --> \(newContentOffset)")
+                        print("FRStretchView: New Content Offset --> \(newContentOffset)")
                     }
                     
                     // if offset y is higher than 0, we keep the initial values
@@ -153,7 +154,7 @@ extension FRStretchImageView {
                         self.topConstraint.constant = self.topInitialValue
                         self.heightConstraint.constant = self.heightInitialValue
                     }
-                    // if it isn't, we do our math
+                        // if it isn't, we do our math
                     else {
                         let dif = CGFloat(abs(Int32(newContentOffset.y)))
                         self.heightConstraint.constant = self.heightInitialValue + dif

@@ -26,13 +26,13 @@ public class FRStretchView : UIView {
     public var topConstraint: NSLayoutConstraint! {
         didSet {
             // Automatically sets the initial value for Top
-            topInitialValue = topConstraint.constant
+            if  topInitialValue == nil  { topInitialValue = topConstraint.constant }
         }
     }
     public var heightConstraint: NSLayoutConstraint! {
         didSet {
             // Automatically sets the initial value for Height
-            heightInitialValue = heightConstraint.constant
+            if  heightInitialValue == nil  { heightInitialValue = heightConstraint.constant }
         }
     }
     

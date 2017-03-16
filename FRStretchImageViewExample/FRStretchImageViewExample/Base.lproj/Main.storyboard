@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wOl-JN-IeN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mje-YC-qt0">
+            <objects>
+                <viewController id="wOl-JN-IeN" customClass="ViewController" customModule="FRStretchImageViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IKp-pG-otX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vya-VN-pAv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bI6-ZN-f2O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIh-cI-imI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2W-8B-8vV" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1201"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="510-vS-kvK" customClass="FRStretchImageView" customModule="FRStretchImageView">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="280" id="Ccf-TZ-YML"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curitiba, 🇧🇷" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WE-Nx-xbf">
+                                                <rect key="frame" x="25" y="320" width="258" height="53"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="45"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TS3-JJ-H9c">
+                                                <rect key="frame" x="25" y="394" width="325" height="629"/>
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed enim eget metus faucibus ornare a nec dolor. Cras eu nisl a odio consectetur malesuada ut a risus. Integer hendrerit porta mi, tempor gravida tellus. Sed placerat sem eget ligula luctus pretium. Vestibulum sit amet ipsum tristique, pellentesque orci ornare, tincidunt dui. Duis molestie est justo, eu gravida justo auctor id. Mauris eleifend lorem nisi, at sagittis mauris ultricies id. Phasellus aliquet a velit ut bibendum.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam et mollis metus. Mauris porta, tellus non vulputate porttitor, tellus ex ultricies mauris, ac interdum odio urna vitae tellus. Morbi vulputate sollicitudin massa sit amet fringilla. Integer a dolor quis risus aliquet volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin congue felis, semper ultrices orci venenatis ac. Fusce sit amet eros ante. Aenean augue augue, tincidunt at est quis, rutrum placerat turpis. Maecenas rhoncus diam et nisl mollis, id mollis leo tempus. Fusce sed nisi quis risus pellentesque efficitur in a tortor. Proin at venenatis leo.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Felipe Ricieri" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjz-Vc-U49">
+                                                <rect key="frame" x="211" y="1108" width="139" height="58"/>
+                                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Sjz-Vc-U49" firstAttribute="top" secondItem="TS3-JJ-H9c" secondAttribute="bottom" constant="85" id="BCY-BH-hHX"/>
+                                            <constraint firstItem="TS3-JJ-H9c" firstAttribute="top" secondItem="3WE-Nx-xbf" secondAttribute="bottom" constant="21" id="DOM-QS-FAY"/>
+                                            <constraint firstItem="3WE-Nx-xbf" firstAttribute="leading" secondItem="c2W-8B-8vV" secondAttribute="leading" constant="25" id="OAj-XF-W1l"/>
+                                            <constraint firstItem="510-vS-kvK" firstAttribute="leading" secondItem="c2W-8B-8vV" secondAttribute="leading" id="Qta-gT-RsE"/>
+                                            <constraint firstItem="510-vS-kvK" firstAttribute="top" secondItem="c2W-8B-8vV" secondAttribute="top" id="eMC-fY-LzG"/>
+                                            <constraint firstItem="Sjz-Vc-U49" firstAttribute="trailing" secondItem="TS3-JJ-H9c" secondAttribute="trailing" id="gVi-tR-aeS"/>
+                                            <constraint firstAttribute="bottom" secondItem="Sjz-Vc-U49" secondAttribute="bottom" constant="35" id="hPg-N0-M5O"/>
+                                            <constraint firstAttribute="trailing" secondItem="510-vS-kvK" secondAttribute="trailing" id="lEX-66-Ooy"/>
+                                            <constraint firstItem="3WE-Nx-xbf" firstAttribute="top" secondItem="510-vS-kvK" secondAttribute="bottom" constant="40" id="neL-68-Qgl"/>
+                                            <constraint firstAttribute="trailing" secondItem="TS3-JJ-H9c" secondAttribute="trailing" constant="25" id="noA-BX-Rvf"/>
+                                            <constraint firstItem="TS3-JJ-H9c" firstAttribute="leading" secondItem="3WE-Nx-xbf" secondAttribute="leading" id="olj-1T-1dJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="c2W-8B-8vV" secondAttribute="trailing" id="19L-9e-o4R"/>
+                                    <constraint firstItem="c2W-8B-8vV" firstAttribute="leading" secondItem="AIh-cI-imI" secondAttribute="leading" id="aJA-4B-SZq"/>
+                                    <constraint firstAttribute="bottom" secondItem="c2W-8B-8vV" secondAttribute="bottom" id="lVT-5h-74S"/>
+                                    <constraint firstItem="c2W-8B-8vV" firstAttribute="width" secondItem="AIh-cI-imI" secondAttribute="width" id="reL-cW-jex"/>
+                                    <constraint firstItem="c2W-8B-8vV" firstAttribute="top" secondItem="AIh-cI-imI" secondAttribute="top" id="yAk-36-MxT"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AIh-cI-imI" secondAttribute="trailing" id="OVd-6L-7kX"/>
+                            <constraint firstItem="AIh-cI-imI" firstAttribute="top" secondItem="bI6-ZN-f2O" secondAttribute="top" id="cBJ-ku-Aoh"/>
+                            <constraint firstItem="AIh-cI-imI" firstAttribute="leading" secondItem="bI6-ZN-f2O" secondAttribute="leading" id="evL-A4-0Tg"/>
+                            <constraint firstItem="Vya-VN-pAv" firstAttribute="top" secondItem="AIh-cI-imI" secondAttribute="bottom" id="fjd-my-nKp"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="imageHeader" destination="510-vS-kvK" id="ozD-l9-C3p"/>
+                        <outlet property="scrollView" destination="AIh-cI-imI" id="NIM-0D-cZj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyi-yN-NIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="414" height="276"/>
+    </resources>
+</document>
