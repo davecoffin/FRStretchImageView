@@ -92,7 +92,7 @@ Note: do this after setting your stretchable scroll, otherwise the initial value
 If you want to receive reports in your log about when the `FRStretchImageView` is allocated/deallocated or you want to listen your `UIScrollView` contentOffset updates, turn the debug mode on:
 
 ```swift
-FRStretchImageView.debug = true // (or FRStretchView.debug = true)
+myStretchableImage.debug = true // (or myStretchableView.debug = true)
 ```
 
 ## Troubleshooting
