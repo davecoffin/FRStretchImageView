@@ -45,7 +45,7 @@ When you are all set, place your `UIImageView`/`UIView` on top of it and pin the
 Now you're ready to add the stretching behavior to your `UIImageView`/`UIView`! You just need to write a single line to make it work:
 
 ```swift
-myStretchingImage.stretchHeightWhenPulledBy(scrollView: myScroll)
+myStretchableImage.stretchHeightWhenPulledBy(scrollView: myScroll)
 ```
 
 Complete example:
@@ -70,10 +70,10 @@ import FRStretchImageView
 
 class MyViewController : UIViewController {
   @IBOutlet weak var myScroll : UIScrollView!
-  @IBOutlet weak var myStretchingView : FRStretchView!
+  @IBOutlet weak var myStretchableView : FRStretchView!
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.myStretchingView.stretchHeightWhenPulledBy(scrollView: self.myScroll)
+    self.myStretchableView.stretchHeightWhenPulledBy(scrollView: self.myScroll)
   }
 }
 ```
@@ -84,6 +84,8 @@ If your `NSLayoutConstraint` doesn't fill the `FRStretchImageView` rules, you ca
 self.myStretchableImage.topConstraint = myTopConstraint
 self.myStretchableImage.heightConstraint = myHeightConstraint
 ```
+
+Note: do this after setting your stretchable scroll, otherwise the initial values will be overrided.
 
 ## Troubleshooting
 
