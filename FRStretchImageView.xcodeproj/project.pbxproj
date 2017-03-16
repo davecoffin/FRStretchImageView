@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		4A24E0801E7191BF0098CDB1 /* FRStretchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A24E07F1E7191BF0098CDB1 /* FRStretchView.swift */; };
+		4AC418A91E745F5500C1E6EE /* FRStretchImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC418A81E745F5500C1E6EE /* FRStretchImageViewTests.swift */; };
+		4AC418AB1E745F5500C1E6EE /* FRStretchImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD994471E70D33D006C9556 /* FRStretchImageView.framework */; };
+		4AC418B21E746AA100C1E6EE /* FRStretchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC418B11E746AA100C1E6EE /* FRStretchViewTests.swift */; };
 		4AD9944C1E70D33D006C9556 /* FRStretchImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD9944A1E70D33D006C9556 /* FRStretchImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AD994531E70D357006C9556 /* FRStretchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD994521E70D357006C9556 /* FRStretchImageView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4AC418AC1E745F5500C1E6EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AD9943E1E70D33D006C9556 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AD994461E70D33D006C9556;
+			remoteInfo = FRStretchImageView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4A24E07F1E7191BF0098CDB1 /* FRStretchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRStretchView.swift; sourceTree = "<group>"; };
+		4AC418A61E745F5500C1E6EE /* FRStretchImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRStretchImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC418A81E745F5500C1E6EE /* FRStretchImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRStretchImageViewTests.swift; sourceTree = "<group>"; };
+		4AC418AA1E745F5500C1E6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AC418B11E746AA100C1E6EE /* FRStretchViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRStretchViewTests.swift; sourceTree = "<group>"; };
 		4AD994471E70D33D006C9556 /* FRStretchImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FRStretchImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD9944A1E70D33D006C9556 /* FRStretchImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRStretchImageView.h; sourceTree = "<group>"; };
 		4AD9944B1E70D33D006C9556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -21,6 +38,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4AC418A31E745F5500C1E6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC418AB1E745F5500C1E6EE /* FRStretchImageView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AD994431E70D33D006C9556 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -31,10 +56,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AC418A71E745F5500C1E6EE /* FRStretchImageViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AC418B11E746AA100C1E6EE /* FRStretchViewTests.swift */,
+				4AC418A81E745F5500C1E6EE /* FRStretchImageViewTests.swift */,
+				4AC418AA1E745F5500C1E6EE /* Info.plist */,
+			);
+			path = FRStretchImageViewTests;
+			sourceTree = "<group>";
+		};
 		4AD9943D1E70D33D006C9556 = {
 			isa = PBXGroup;
 			children = (
 				4AD994491E70D33D006C9556 /* FRStretchImageView */,
+				4AC418A71E745F5500C1E6EE /* FRStretchImageViewTests */,
 				4AD994481E70D33D006C9556 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				4AD994471E70D33D006C9556 /* FRStretchImageView.framework */,
+				4AC418A61E745F5500C1E6EE /* FRStretchImageViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +109,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4AC418A51E745F5500C1E6EE /* FRStretchImageViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AC418B01E745F5500C1E6EE /* Build configuration list for PBXNativeTarget "FRStretchImageViewTests" */;
+			buildPhases = (
+				4AC418A21E745F5500C1E6EE /* Sources */,
+				4AC418A31E745F5500C1E6EE /* Frameworks */,
+				4AC418A41E745F5500C1E6EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AC418AD1E745F5500C1E6EE /* PBXTargetDependency */,
+			);
+			name = FRStretchImageViewTests;
+			productName = FRStretchImageViewTests;
+			productReference = 4AC418A61E745F5500C1E6EE /* FRStretchImageViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4AD994461E70D33D006C9556 /* FRStretchImageView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AD9944F1E70D33D006C9556 /* Build configuration list for PBXNativeTarget "FRStretchImageView" */;
@@ -96,9 +151,14 @@
 		4AD9943E1E70D33D006C9556 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Ricieri Labs";
 				TargetAttributes = {
+					4AC418A51E745F5500C1E6EE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					4AD994461E70D33D006C9556 = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0820;
@@ -119,11 +179,19 @@
 			projectRoot = "";
 			targets = (
 				4AD994461E70D33D006C9556 /* FRStretchImageView */,
+				4AC418A51E745F5500C1E6EE /* FRStretchImageViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4AC418A41E745F5500C1E6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AD994451E70D33D006C9556 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +202,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4AC418A21E745F5500C1E6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC418B21E746AA100C1E6EE /* FRStretchViewTests.swift in Sources */,
+				4AC418A91E745F5500C1E6EE /* FRStretchImageViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AD994421E70D33D006C9556 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,7 +222,37 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4AC418AD1E745F5500C1E6EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AD994461E70D33D006C9556 /* FRStretchImageView */;
+			targetProxy = 4AC418AC1E745F5500C1E6EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4AC418AE1E745F5500C1E6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FRStretchImageViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ricieri.FRStretchImageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4AC418AF1E745F5500C1E6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FRStretchImageViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ricieri.FRStretchImageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		4AD9944D1E70D33D006C9556 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,6 +394,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4AC418B01E745F5500C1E6EE /* Build configuration list for PBXNativeTarget "FRStretchImageViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC418AE1E745F5500C1E6EE /* Debug */,
+				4AC418AF1E745F5500C1E6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4AD994411E70D33D006C9556 /* Build configuration list for PBXProject "FRStretchImageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
