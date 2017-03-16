@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4ABB1A7C1E7B152100295B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB1A7B1E7B152100295B75 /* AppDelegate.swift */; };
-		4ABB1A7E1E7B152100295B75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB1A7D1E7B152100295B75 /* ViewController.swift */; };
+		4ABB1A7E1E7B152100295B75 /* FRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB1A7D1E7B152100295B75 /* FRViewController.swift */; };
 		4ABB1A811E7B152100295B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB1A7F1E7B152100295B75 /* Main.storyboard */; };
 		4ABB1A831E7B152100295B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB1A821E7B152100295B75 /* Assets.xcassets */; };
 		4ABB1A861E7B152100295B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB1A841E7B152100295B75 /* LaunchScreen.storyboard */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		4ABB1A781E7B152100295B75 /* FRStretchImageViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRStretchImageViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABB1A7B1E7B152100295B75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4ABB1A7D1E7B152100295B75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4ABB1A7D1E7B152100295B75 /* FRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRViewController.swift; sourceTree = "<group>"; };
 		4ABB1A801E7B152100295B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4ABB1A821E7B152100295B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ABB1A851E7B152100295B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				4ABB1A7B1E7B152100295B75 /* AppDelegate.swift */,
-				4ABB1A7D1E7B152100295B75 /* ViewController.swift */,
+				4ABB1A7D1E7B152100295B75 /* FRViewController.swift */,
 				4ABB1A7F1E7B152100295B75 /* Main.storyboard */,
 				4ABB1A821E7B152100295B75 /* Assets.xcassets */,
 				4ABB1A841E7B152100295B75 /* LaunchScreen.storyboard */,
@@ -123,6 +123,7 @@
 				TargetAttributes = {
 					4ABB1A771E7B152100295B75 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TPAK596CU5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -211,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ABB1A7E1E7B152100295B75 /* ViewController.swift in Sources */,
+				4ABB1A7E1E7B152100295B75 /* FRViewController.swift in Sources */,
 				4ABB1A7C1E7B152100295B75 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +335,8 @@
 			baseConfigurationReference = F2F8142B8D01D0E769AAA211 /* Pods-FRStretchImageViewExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TPAK596CU5;
 				INFOPLIST_FILE = FRStretchImageViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ricieri.FRStretchImageViewExample;
@@ -347,6 +350,8 @@
 			baseConfigurationReference = EF5EC9BE8ADA5FEB74264FF1 /* Pods-FRStretchImageViewExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TPAK596CU5;
 				INFOPLIST_FILE = FRStretchImageViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ricieri.FRStretchImageViewExample;

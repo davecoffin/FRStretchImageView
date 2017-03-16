@@ -87,6 +87,14 @@ self.myStretchableImage.heightConstraint = myHeightConstraint
 
 Note: do this after setting your stretchable scroll, otherwise the initial values will be overrided.
 
+## Debug
+
+If you want to receive reports in your log about when the `FRStretchImageView` is allocated/deallocated or you want to listen your `UIScrollView` contentOffset updates, turn the debug mode on:
+
+```swift
+FRStretchImageView.debug = true // (or FRStretchView.debug = true)
+```
+
 ## Troubleshooting
 
 `FRStretchImageView` can work around your `IBOutlet`s to add its behavior automatically, but it will only wrap the `IBOutlet`s themselves & its superviews. So if you are using multiples `UIView`s between the `UIScrollView` and `UIImageView`/`UIView` observed, you should set the `clipToBounds = false` on them.

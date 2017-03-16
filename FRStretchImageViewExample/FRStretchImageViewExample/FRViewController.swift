@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FRViewController.swift
 //  FRStretchImageViewExample
 //
 //  Created by Felipe Ricieri on 16/03/17.
@@ -9,7 +9,7 @@
 import UIKit
 import FRStretchImageView
 
-class ViewController: UIViewController {
+class FRViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageHeader: FRStretchImageView!
