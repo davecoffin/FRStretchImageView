@@ -22,7 +22,7 @@ And then run:
 
 #### Manual Installation
 
-To manually install `FRStretchImageView`, simply add `FRStretchImageView` .swift files to your project.
+To manually install `FRStretchImageView`, simply add `FRStretchImageView` files to your project.
 
 ## Example
 
@@ -38,7 +38,7 @@ When you are all set, place your `UIImageView`/`UIView` on top of it and pin the
 
 2) You need to pin a Height `NSLayoutConstraint` in your `UIImageView`/`UIView`.
 
-... and subclass it as `FRStretchImageView`.
+... and subclass it as `FRStretchImageView` (or `FRStretchView`).
 
 ## Usage
 
@@ -55,12 +55,34 @@ import FRStretchImageView
 
 class MyViewController : UIViewController {
   @IBOutlet weak var myScroll : UIScrollView!
-  @IBOutlet weak var myStretchingImage : FRStretchImageView!
+  @IBOutlet weak var myStretchableImage : FRStretchImageView!
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.myStretchingImage.stretchHeightWhenPulledBy(scrollView: self.myScroll)
+    self.myStretchableImage.stretchHeightWhenPulledBy(scrollView: self.myScroll)
   }
 }
+```
+
+You can also add this behavior to an entire `UIView`:
+
+```swift
+import FRStretchImageView
+
+class MyViewController : UIViewController {
+  @IBOutlet weak var myScroll : UIScrollView!
+  @IBOutlet weak var myStretchingView : FRStretchView!
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.myStretchingView.stretchHeightWhenPulledBy(scrollView: self.myScroll)
+  }
+}
+```
+
+If your `NSLayoutConstraint` doesn't fill the `FRStretchImageView` rules, you can now set them manually by adding to your code (from v1.2.0):
+
+```swift
+self.myStretchableImage.topConstraint = myTopConstraint
+self.myStretchableImage.heightConstraint = myHeightConstraint
 ```
 
 ## Troubleshooting
