@@ -8,6 +8,8 @@
 
 An easy way to add pull-to-stretch `UIImageView`/`UIView` on top of your `UIScrollView`. This is a similar behavior of Twitter Profile's Header.
 
+<![http://imgur.com/JYZz4zG]()
+
 ## Installation
 
 FRStretchImageView is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
