@@ -8,7 +8,7 @@
 
 An easy way to add pull-to-stretch `UIImageView`/`UIView` on top of your `UIScrollView`. This is a similar behavior of Twitter Profile's Header.
 
-<img src="https://dl.dropboxusercontent.com/content_link/QTV3bbrdIWiP6869R3FXMMbCZU9v4dIdRxPxEGlw22S4MF3xmRNaCmdDhV62wH9s/file" alt="Demo GIF">
+<img src="http://felipe.ricieri.me/pods/frstretchimageview_demo.gif" alt="Demo GIF">
 
 ## Installation
 
