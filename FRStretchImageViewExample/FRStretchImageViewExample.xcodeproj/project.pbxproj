@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4ABB1A7C1E7B152100295B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB1A7B1E7B152100295B75 /* AppDelegate.swift */; };
-		4ABB1A7E1E7B152100295B75 /* FRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB1A7D1E7B152100295B75 /* FRViewController.swift */; };
 		4ABB1A811E7B152100295B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB1A7F1E7B152100295B75 /* Main.storyboard */; };
 		4ABB1A831E7B152100295B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB1A821E7B152100295B75 /* Assets.xcassets */; };
 		4ABB1A861E7B152100295B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB1A841E7B152100295B75 /* LaunchScreen.storyboard */; };
+		4AED5AC71E7BFA6E0057BC51 /* WhatToSeeInCuritibaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AED5AC61E7BFA6E0057BC51 /* WhatToSeeInCuritibaListViewController.swift */; };
+		4AED5AC91E7BFA7E0057BC51 /* WhatToSeeInCuritibaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AED5AC81E7BFA7E0057BC51 /* WhatToSeeInCuritibaDetailsViewController.swift */; };
 		9A01C35A9B69F08EC966E805 /* Pods_FRStretchImageViewExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC0CA304250F264128795A4 /* Pods_FRStretchImageViewExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4ABB1A781E7B152100295B75 /* FRStretchImageViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRStretchImageViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABB1A7B1E7B152100295B75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4ABB1A7D1E7B152100295B75 /* FRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRViewController.swift; sourceTree = "<group>"; };
 		4ABB1A801E7B152100295B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4ABB1A821E7B152100295B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ABB1A851E7B152100295B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ABB1A871E7B152100295B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AC0CA304250F264128795A4 /* Pods_FRStretchImageViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRStretchImageViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AED5AC61E7BFA6E0057BC51 /* WhatToSeeInCuritibaListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatToSeeInCuritibaListViewController.swift; sourceTree = "<group>"; };
+		4AED5AC81E7BFA7E0057BC51 /* WhatToSeeInCuritibaDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatToSeeInCuritibaDetailsViewController.swift; sourceTree = "<group>"; };
 		EF5EC9BE8ADA5FEB74264FF1 /* Pods-FRStretchImageViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRStretchImageViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRStretchImageViewExample/Pods-FRStretchImageViewExample.release.xcconfig"; sourceTree = "<group>"; };
 		F2F8142B8D01D0E769AAA211 /* Pods-FRStretchImageViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRStretchImageViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRStretchImageViewExample/Pods-FRStretchImageViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				4ABB1A7B1E7B152100295B75 /* AppDelegate.swift */,
-				4ABB1A7D1E7B152100295B75 /* FRViewController.swift */,
+				4AED5AC61E7BFA6E0057BC51 /* WhatToSeeInCuritibaListViewController.swift */,
+				4AED5AC81E7BFA7E0057BC51 /* WhatToSeeInCuritibaDetailsViewController.swift */,
 				4ABB1A7F1E7B152100295B75 /* Main.storyboard */,
 				4ABB1A821E7B152100295B75 /* Assets.xcassets */,
 				4ABB1A841E7B152100295B75 /* LaunchScreen.storyboard */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ABB1A7E1E7B152100295B75 /* FRViewController.swift in Sources */,
+				4AED5AC91E7BFA7E0057BC51 /* WhatToSeeInCuritibaDetailsViewController.swift in Sources */,
+				4AED5AC71E7BFA6E0057BC51 /* WhatToSeeInCuritibaListViewController.swift in Sources */,
 				4ABB1A7C1E7B152100295B75 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
