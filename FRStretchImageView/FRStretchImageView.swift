@@ -114,7 +114,7 @@ public class FRStretchImageView : UIImageView {
         }
         
         // Remove observer
-        self.scrollView.removeObserver(self, forKeyPath: self.keyPathObserved, context: &self.context)
+        self.scrollView?.removeObserver(self, forKeyPath: self.keyPathObserved, context: &self.context)
         
         // Freeing ARC
         self.scrollView = nil
