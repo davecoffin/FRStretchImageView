@@ -23,13 +23,13 @@ public class FRStretchView : UIView {
     /**
      Constraints we need to change in order to get the "stretch" behavior
      */
-    public var topConstraint: NSLayoutConstraint! {
+    @objc public var topConstraint: NSLayoutConstraint! {
         didSet {
             // Automatically sets the initial value for Top
             topInitialValue = topConstraint.constant
         }
     }
-    public var heightConstraint: NSLayoutConstraint! {
+    @objc public var heightConstraint: NSLayoutConstraint! {
         didSet {
             // Automatically sets the initial value for Height
             heightInitialValue = heightConstraint.constant
@@ -64,7 +64,7 @@ public class FRStretchView : UIView {
      
      @param scrollView: UIScrollView
      */
-    public func stretchHeightWhenPulledBy(scrollView: UIScrollView) {
+    @objc public func stretchHeightWhenPulledBy(scrollView: UIScrollView) {
         
         // Inform log
         if  debug {
