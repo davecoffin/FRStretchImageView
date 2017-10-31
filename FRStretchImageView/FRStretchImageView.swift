@@ -12,7 +12,7 @@ import UIKit
 /**
  FRStretchImageView: an easy way to add a pull-to-stretch behavior to your UIImageView
  */
-public class FRStretchImageView : UIImageView {
+open class FRStretchImageView : UIImageView {
     
     /**
      debug: Set it to TRUE if you want to receive logs
